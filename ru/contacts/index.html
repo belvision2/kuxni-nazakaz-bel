@@ -613,67 +613,10 @@ $('.calc-close').click( function() {
 <span class="taxon-last">Контакты</span>
 </div>
 
-					<div id="map" style="width:calc(100% - 8px); height:360px"></div>
-<link href="http://xn--h1adjxk.xn--80aaa0acqr.xn--90ais/_js/leaflet/0.7.3/leaflet.css" type="text/css" rel="stylesheet" property="stylesheet"/>
-<script src="http://xn--h1adjxk.xn--80aaa0acqr.xn--90ais/_js/leaflet/0.7.3/leaflet.js"></script>
-<script type="text/javascript">
-var maxZoom=18;
-var defaultZoom=11;
-var homeX=27.565094;
-var homeY=53.902945;
-var map=new L.map("map");
-var mapU="http://xn--h1adjxk.xn--80aaa0acqr.xn--90ais/map/{s}/{z}/{x}/{y}";
-var mapL=new L.TileLayer(mapU, { maxZoom:maxZoom, attribution:"", subdomains:"1234" });
-map.setView(new L.LatLng(homeY, homeX), defaultZoom).addLayer(mapL);
-var markers=[[53.906326077688206, 27.43809701442718], [53.890301743024196, 27.541291136294603], [53.95487, 27.69209], [53.8510204, 27.4766457]];
-var markersid=[];
-var info=[[
-	'/ru/shops/4260/'
-	], [
-	'/ru/shops/2226/'
-	], [
-	'/ru/shops/9/'
-	], [
-	'/ru/shops/602/'
-	]];
-var infopopup=[[
-	'<h4>Салон Кухни Стиль</h4><p>ул.Притыцкого, 97</p><p>Пн. – Пт.: 10.30 – 20.00Сб. – Вс.: 10.30 – 17.00</p>'
-	], [
-	'<h4>Cалон Кухни Стиль</h4><p>ул. Московская, 1/2</p><p>Пн. – Пт.: 10.30 – 20.00Сб. – Вс.: 10.30 – 17.00</p>'
-	], [
-	'<h4>Павильон «МАСТЕР&nbsp;МЕБЕЛЬ»</h4><p>Cтроительный рынок, ул. Уручская, 19, павильон 181(20 м от окна справки рынка)</p><p>Вт. – Вс.: 09.00 – 17.00</p>'
-	], [
-	'<h4>Салон «Кухни Стиль» </h4><p>пр-т. Дзержинского, 119</p><p>Пн. – Пт.: 10.00 – 20.00Сб. – Вс.: 10.00 – 18.00ЗАКРЫТ ПО ПРИЧИНЕ ЗАМЕНЫ ЭКСПОЗИЦИИ</p>'
-	]];
-var LIcon=L.icon({ iconUrl:"/_img/map/marker-icon.png", iconSize:[52, 64], iconAnchor:[14, 39], popupAnchor:[12, -40] });
-var LIconActive=L.icon({ iconUrl:"/_img/map/marker-icon.png", iconSize:[52, 64], iconAnchor:[14, 39] });
-for(var i=0; i<markers.length; i++) {
-	var marker=L.marker(markers[i], { icon:LIcon });
-	marker._id=i;
-	marker.on("click", (function(m) {
-		var link = info[i];
-		return function(){
-			parent.location = link;
-		}
-	})(marker));
-	marker.bindPopup(""+infopopup[i]+"");
-	marker.on("mouseover", function(e){
-		this.openPopup();
-		$(".leaflet-tile-container").removeClass("grayscale");
-	});
-	marker.on("mouseout", function(e){
-		this.closePopup();
-		$(".leaflet-tile-container").addClass("grayscale");
-	});
-	markersid.push(marker);
-	marker.addTo(map);
-}
-$(".leaflet-tile-container").addClass("grayscale");
-map.scrollWheelZoom.disable();
-$(".leaflet-control-attribution").css({ "display":"none" });
-</script>					<div class="fck"><div class="contact-blocks" itemscope="" itemtype="http://schema.org/Organization" style="margin: 0px;">
-<div style="width: 133px; text-align: center; float: left;"><img alt="" src="../../files/image/tatiana.jpg" style="width: 133px; height: 200px; margin-bottom:4px;"/><br/>
-<span style="line-height: 12px; font-size: 12px;"><b>Консультант Татьяна</b></span></div>
+					
+
+					<div class="fck"><div class="contact-blocks" itemscope="" itemtype="http://schema.org/Organization" style="margin: 0px;">
+
 <div style="width: 204px; text-align: center; float: left;"><br/>
 &nbsp;</div>
 <div class="contact-blocks" style="overflow:hidden">
@@ -681,58 +624,15 @@ $(".leaflet-control-attribution").css({ "display":"none" });
 <p>Вызов дизайнера на дом, консультации, предварительный расчет:</p>
 <ul class="contact-blocks">
 <li>
-<p style="padding-left:20px;"><a href="skype:master-mebel_1?call"><span _img="" icons="" left="" no-repeat="" style="background: url(../../_img/skype.png) 0px 5px no-repeat; display:inline-block; padding-left:20px; left:-20px; position:relative;">master-mebel_1</span></a></p>
-<p><b><span _img="" icons="" itemprop="telephone" left="" no-repeat="" style="background: none;">+375 (29) 109-09-02</span></b><br/>
+<p style="padding-left:20px;"><a href="skype:master-mebel_1?call"><span _img="" icons="" left="" no-repeat="" style=" display:inline-block; padding-left:20px; left:-20px; position:relative;">6941854@mail.ru</span></a></p>
+<p><b><span _img="" icons="" itemprop="telephone" left="" no-repeat="" style="background: none;">+37529694-18-54</span></b><br/>
 &nbsp;</p>
-<p><b><span _img="" icons="" left="" no-repeat="" style="background: none;">Пн &ndash; Вс: 09.00 - 20.00</span></b></p>
-</li>
-<li>
-<p><b>Отдел доставки и установки</b><br/>
-Для уточнения вопросов по доставке и установке:</p>
-<p><b><span _img="" icons="" left="" no-repeat="" style="background: none;">+375 (29) 683-08-02</span></b></p>
-<p><b><span _img="" icons="" left="" no-repeat="" style="background: none;">Пн &ndash; Пт с 9.00 до 18.00</span></b></p>
-<p><b><span _img="" icons="" left="" no-repeat="" style="background: none;">Перерыв: с 13.00 до 14.00</span></b></p>
-</li>
-<li>
-<p><b>Отдел работы с рекламациями клиентов</b><br/>
-По работе с рекламациями и претензиями:</p>
-<p><b><span _img="" icons="" left="" no-repeat="" style="background: none;">+375 (29) 371-08-06</span></b></p>
-<p><b><span _img="" icons="" left="" no-repeat="" style="background: none;">Пн &ndash; Пт с 9.00 до 18.00</span></b></p>
-<p><b><span _img="" icons="" left="" no-repeat="" style="background: none;">Перерыв: с 13.00 до 14.00</span></b></p>
-</li>
-<li>
-<p><br/>
-<!-- <b>Прием граждан и юридических лиц руководством, по общим вопросам, осуществляется:</b></p>
-<p>каждый первый вторник месяца<br/>
-с 10.00 до 12.00</p>
-<p>предварительная запись при обращении в <u>контакт-центр</u></p> --></p>
-</li>
-<li>
-<p><br/>
-<b>Выслать проекты для просчётов дизайнерам можно по адресу:</b></p>
-<p><span _img="" icons="" no-repeat="" style="background: none;"><script type="text/javascript">email('6941854', 'mail', 'ru');</script></span></p>
-<p><strong>Коммерческие предложения принимаем по адресу:</strong></p>
-<p><span _img="" icons="" no-repeat="" style="background: none;"><script type="text/javascript">email('info', 'master-mebel', 'by');</script></span></p>
-<br/>
-<p><strong>Официальные обращения просим отправлять по адресу:</strong></p>
-<p><span _img="" icons="" no-repeat="" style="background: none;"><script type="text/javascript">email('servis', 'master-mebel', 'by');</script></span></p>
-<br/>
-<p><a href="#orderdesigner" onclick="f_order_designer(16)">Заказать выезд дизайнера Кухни Стиль на дом</a></p>
-</li>
-<li>
-<p><br/>
-<b>Наши реквизиты:</b></p>
-<p><b>ОДО &laquo;<span itemprop="name">Планета мебели</span>&raquo;, РБ</b><br/>
-УНП 190819396 ОКПО 377178275000</p>
-<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="postalCode">220007</span>, г. <span itemprop="addressLocality">Минск</span>, <span itemprop="streetAddress">ул. Московская, 1/2</span></div>
-<br/>
-р/с 3012083180014 в ЦБУ№3 ЗАО &laquo;МТБанк&raquo; код 117, г. Минск, ул. Короля, 51<br/>
-<br/>
-<a href="../../_img/svid.jpg">Свидетельство о государственной регистрации</a><br/>
-&nbsp;
-<p>&nbsp;</p>
+<p><b><span _img="" icons="" itemprop="telephone" left="" no-repeat="" style="background: none;">+37529690-96-02</span></b><br/>
+&nbsp;</p>
+
 </li>
 </ul>
+
 </div>
 <p><br clear="all"/>
 &nbsp;</p>
@@ -786,8 +686,9 @@ $(".leaflet-control-attribution").css({ "display":"none" });
 
 			<div class="footer-phones">
 				
-								<div><span class="td i-velcom"><a href="tel:+375296941854"><span>+375 29</span> 694-18-54</a></span></div>
-				<div><span class="td i-email"><span><script type="text/javascript">email('6941854', 'mail', 'ru');</script></span></div>
+				<div><a href="tel:+375296941854">+37529694-18-54</a></div>
+				<div><a href="tel:+375296941854">+37529690-96-02</a></div>
+				<div><span class="td i-email"><script type="text/javascript">email('6941854', 'mail', 'ru');</script></span></div>
 							</div>
 			
 			<div class="social-bottom">
